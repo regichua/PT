@@ -1,0 +1,31 @@
+public static int HighestScore(int Team_1_score, int Team_2_score) {
+        return Math.max(Team_1_score, Team_2_score);
+    }
+
+    public static String getLeadingTeam(int Team_1_score, int Team_2_score, String team1, String team2) {
+        System.out.printf("Both teams are tied with %d points!%n", Team_1_score);
+            System.out.println("Determining the leading team based on overall score...");
+            if (Team_1_score > Team_2_score) {
+                System.out.printf("Team %s is the overall leading team!%n", team1);
+            } else if (Team_2_score > Team_1_score) {
+                System.out.printf("Team %s is the overall leading team!%n", team2);
+            }
+        }
+        System.out.println("");
+}
+
+
+
+else {
+            System.out.printf("Both teams are tied with %d points!%n", Team_1_score);
+            System.out.println("Determining the leading team based on overall score...");
+            if (Team_1_score > Team_2_score) {
+                System.out.printf("Team %s is the overall leading team!%n", team1);
+            } else if (Team_2_score > Team_1_score) {
+                System.out.printf("Team %s is the overall leading team!%n", team2);
+            }
+        }
+        System.out.println("");
+    }
+
+
