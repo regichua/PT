@@ -1,31 +1,19 @@
-public static int HighestScore(int Team_1_score, int Team_2_score) {
-        return Math.max(Team_1_score, Team_2_score);
-    }
-
-    public static String getLeadingTeam(int Team_1_score, int Team_2_score, String team1, String team2) {
-        System.out.printf("Both teams are tied with %d points!%n", Team_1_score);
-            System.out.println("Determining the leading team based on overall score...");
-            if (Team_1_score > Team_2_score) {
-                System.out.printf("Team %s is the overall leading team!%n", team1);
-            } else if (Team_2_score > Team_1_score) {
-                System.out.printf("Team %s is the overall leading team!%n", team2);
-            }
-        }
+public static void getHighestScore(int team1Score, int team2Score, String team1, String team2) {
         System.out.println("");
-}
+        System.out.println("Highest Score Summary: ");
+        System.out.println("======================");
+        System.out.printf("Team %s: %d%n", team1, team1Score);
+        System.out.printf("Team %s: %d%n", team2, team2Score);
+        System.out.println("======================");
 
-
-
-else {
-            System.out.printf("Both teams are tied with %d points!%n", Team_1_score);
-            System.out.println("Determining the leading team based on overall score...");
-            if (Team_1_score > Team_2_score) {
-                System.out.printf("Team %s is the overall leading team!%n", team1);
-            } else if (Team_2_score > Team_1_score) {
-                System.out.printf("Team %s is the overall leading team!%n", team2);
-            }
+        System.out.println("Determining the leading team based on overall score...");
+         if (Team_1_score > Team_2_score) {
+            System.out.printf("Team %s has the highest score with %d points!%n", team1, team1Score);
+        } else if (Team_2_score > Team_1_score) {
+            System.out.printf("Team %s has the highest score with %d points!%n", team2, team2Score);
+        } else {
+            System.out.printf("Both teams are tied with %d points!%n", team1Score);
         }
         System.out.println("");
     }
-
 
